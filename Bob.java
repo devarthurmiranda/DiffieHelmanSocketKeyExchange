@@ -53,7 +53,7 @@ public class Bob {
         final int sb = 4;
 
         try {
-            Socket socket = new Socket("localhost", 1234); // Substituir Localhost pelo IP do servidor
+            Socket socket = new Socket("localhost", 1234);
             System.out.println("Connection stablished!");
             ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
